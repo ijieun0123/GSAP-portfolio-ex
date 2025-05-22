@@ -19,3 +19,11 @@ $(function () {
         prevScrollTop = nowScrollTop;
     });
 });
+
+// 03. scrolla.js
+$(function () {
+    $(".animate").scrolla({
+        mobile: true,
+        once: false,
+    });
+});
