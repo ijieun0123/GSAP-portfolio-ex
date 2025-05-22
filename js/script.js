@@ -36,7 +36,7 @@ $(function () {
             start: "0% 80%", // 트리거 대상, 브라우저
             end: "100% 100%", // 트리거 대상, 브라우저
             scrub: 1,
-            markers: true,
+            // markers: true,
         },
     })
         .to(

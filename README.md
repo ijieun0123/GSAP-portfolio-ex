@@ -23,3 +23,12 @@ https://github.com/user-attachments/assets/ec17ae99-e1af-4d90-84b8-2645d5ae4d28
 </pre>
 
 https://github.com/user-attachments/assets/f3348580-c659-4d3e-b4c1-8b793b6510cc
+
+<br/>
+
+<pre>
+- con01 영역 ClipPath 로 Gsap Animation 제작
+( 동영상 업로드 실패 )
+</pre>
+
+<br/>
