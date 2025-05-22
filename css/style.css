@@ -108,7 +108,7 @@ body {
 }
 .wrap {
     position: relative;
-    margin: 0 auto 3000px;
+    margin: 0 auto;
     overflow: hidden;
     background: #000;
     color: #fff;
@@ -258,4 +258,34 @@ header .gnb ul li a:hover .char:after {
     30% {
         opacity: 0;
     }
+}
+
+/* section.con01 */
+.con01 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.con01 .videoWrap video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.con01 .title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.con01 .title h2 {
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.2;
 }
