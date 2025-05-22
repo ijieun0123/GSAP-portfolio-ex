@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* 구글폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+li {
+    list-style: none;
+}
+address,
+em,
+i {
+    font-style: normal;
+}
+button {
+    background: none;
+    border: none;
+}
+img {
+    vertical-align: middle;
+}
+
+/* 영어폰트 */
+.en {
+    font-family: "Public Sans", sans-serif;
+}
+.en2 {
+    font-family: "Cormorant Infant", serif;
+}
+
+/* 레이아웃 */
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.wrap {
+    position: relative;
+    margin: 0 auto 3000px;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+}
+
+/* header */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 60px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    box-sizing: border-box;
+}
+header.active {
+    transform: translateY(-100%);
+}
+header .logo {
+    color: #fff;
+}
+header .gnb ul {
+    display: flex;
+    justify-content: space-between;
+}
+header .gnb ul li {
+    margin-left: 70px;
+}
+header .gnb ul li a {
+    display: block;
+}
+header .menuOpen {
+    display: none;
+    transition: 0.3s;
+}
+
+/* gnb 호버효과 */
+header .gnb ul li a .char {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    overflow: hidden;
+}
+header .gnb ul li a .char:before,
+header .gnb ul li a .char:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    color: #fff;
+    content: attr(data-char);
+    transition: transform 0.35s;
+    transition-delay: calc(30ms * var(--char-index));
+}
+header .gnb ul li a .char:before {
+    transform: translateY(100%);
+}
+header .gnb ul li a:hover .char:before {
+    transform: translateY(0%);
+    opacity: 1;
+}
+header .gnb ul li a:hover .char:after {
+    transform: translateY(-100%);
+}
