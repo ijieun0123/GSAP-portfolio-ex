@@ -292,9 +292,6 @@ header .gnb ul li a:hover .char:after {
 }
 
 /* section.con02 */
-.con02 {
-    padding-bottom: 2000px;
-}
 .con02 .title {
     width: 100%;
     height: 100vh;
@@ -406,4 +403,114 @@ header .gnb ul li a:hover .char:after {
 .con02 .workList li a:hover .imgBox::after {
     width: 168px;
     height: 168px;
+}
+
+/* section.con03 */
+.con03 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+}
+.con03 .textWrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    z-index: 2;
+}
+.con03 .textWrap .title {
+    font-size: 18px;
+}
+.con03 .textWrap ul li {
+    font-size: 100px;
+    line-height: 1.2;
+}
+.con03 .textWrap ul li .en2 {
+    padding-left: 5px;
+}
+
+/* readmore btn */
+.con03 .btnWrap {
+    position: absolute;
+    right: 50%;
+    top: 60%;
+    z-index: 3;
+}
+.con03 .btnWrap a {
+    display: block;
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.con03 .btnWrap a img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 22%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.con03 .btnWrap a img:last-child {
+    opacity: 0;
+}
+.con03 .btnWrap a:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 0%;
+    height: 0%;
+    border-radius: 100%;
+    background: #fff url(../images/readMore3.png) no-repeat center/158px;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 0.4s;
+}
+.con03 .btnWrap a:hover {
+    border-color: transparent;
+}
+.con03 .btnWrap a:hover img:last-child {
+    opacity: 1;
+}
+.con03 .btnWrap a:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+/* simplyScroll */
+.simply-scroll .simply-scroll-clip {
+    overflow: hidden;
+    transform: rotate(5deg) translate(150%, 400px) scale(1.1);
+    opacity: 0;
+}
+.simply-scroll .simply-scroll-clip .simply-scroll-list li {
+    width: 400px;
+    float: left;
+    filter: brightness(50%);
+}
+.simply-scroll .simply-scroll-clip .simply-scroll-list li img {
+    width: 100%;
+}
+
+/* simplyScroll.motion */
+.con03.motion .simply-scroll .simply-scroll-clip {
+    transform: rotate(5deg) translate(0%, 400px) scale(1.1);
+    opacity: 1;
+    transition: 1.2s;
+    transition-delay: 0.3s;
+}
+.con03.motion .btnWrap {
+    right: 50%;
+    transition: 1.2s;
+}
+.con03.motion .textWrap ul li p {
+    animation-name: textAni;
+    animation-duration: 1.3s;
 }
