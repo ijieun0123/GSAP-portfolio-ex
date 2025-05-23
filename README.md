@@ -33,3 +33,13 @@ https://github.com/user-attachments/assets/f3348580-c659-4d3e-b4c1-8b793b6510cc
 https://github.com/user-attachments/assets/b22ac775-4653-408b-a698-b85efb9e00bb
 
 <br/>
+
+<pre>
+- con02 영역 마우스 오버시 활성화되는 버튼
+- con02 영역 Gsap ScrollTrigger 를 활용한 타이틀 제작
+- con02 영역 Gsap ScrollTrigger 를 활용한 워크리스트 제작
+</pre>
+
+<video width="100%" controls>
+  <source src="images/mywork.mp4" type="video/mp4">
+</video>
