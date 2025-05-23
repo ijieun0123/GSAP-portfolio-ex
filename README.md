@@ -40,6 +40,4 @@ https://github.com/user-attachments/assets/b22ac775-4653-408b-a698-b85efb9e00bb
 - con02 영역 Gsap ScrollTrigger 를 활용한 워크리스트 제작
 </pre>
 
-<video width="100%" controls>
-  <source src="images/mywork.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/cf4e7af3-11bd-4d2d-aada-595af42bd62c
