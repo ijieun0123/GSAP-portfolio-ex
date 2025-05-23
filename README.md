@@ -35,9 +35,18 @@ https://github.com/user-attachments/assets/b22ac775-4653-408b-a698-b85efb9e00bb
 <br/>
 
 <pre>
-- con02 영역 마우스 오버시 활성화되는 버튼
+- con02 영역 마우스 오버시 활성화되는 버튼 제작
 - con02 영역 Gsap ScrollTrigger 를 활용한 타이틀 제작
 - con02 영역 Gsap ScrollTrigger 를 활용한 워크리스트 제작
 </pre>
 
 https://github.com/user-attachments/assets/cf4e7af3-11bd-4d2d-aada-595af42bd62c
+
+<br/>
+
+<pre>
+- con03 영역 마우스 오버시 활성화되는 버튼 제작
+- con03 영역 SimplyScroll 활용한 배너 제작
+</pre>
+
+https://github.com/user-attachments/assets/9c06fcb4-0856-4617-be40-4f9cb3c4e594
