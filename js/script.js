@@ -1,3 +1,8 @@
+// 00. a 속성 제거 ( a 클릭시 위로 튕기는 현상 제거 )
+$(document).on("click", 'a[href="#"]', function (e) {
+    e.preventDefault();
+});
+
 // 01. 스플리팅 호출
 $(function () {
     Splitting();
@@ -153,5 +158,14 @@ $(function () {
             pauseOnHover: false,
             pauseOnTouch: false,
         });
+    });
+});
+
+// 07. header - menuOpen
+$(function () {
+    $(".menuOpen").on("click", function () {
+        $(".gnb").toggleClass("on");
+        $(this).toggleClass("on");
+        $("body").toggleClass("on");
     });
 });
