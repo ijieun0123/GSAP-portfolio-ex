@@ -166,6 +166,6 @@ $(function () {
     $(".menuOpen").on("click", function () {
         $(".gnb").toggleClass("on");
         $(this).toggleClass("on");
-        $("body").toggleClass("on");
+        $("body").toggleClass("on"); // 스크롤 방지
     });
 });
